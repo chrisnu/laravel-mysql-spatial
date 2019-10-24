@@ -32,7 +32,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Chrisnu\\LaravelMysqlSpatial\\": "src/"
+            "Grimzy\\LaravelMysqlSpatial\\": "src/"
         }
     },
     "autoload-dev" : {
@@ -47,7 +47,7 @@
         },
         "laravel": {
             "providers": [
-                "Chrisnu\\LaravelMysqlSpatial\\SpatialServiceProvider"
+                "Grimzy\\LaravelMysqlSpatial\\SpatialServiceProvider"
             ]
         }
     }
