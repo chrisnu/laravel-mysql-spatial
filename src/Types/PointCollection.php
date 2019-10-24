@@ -12,9 +12,10 @@ abstract class PointCollection extends GeometryCollection
      */
     public function __construct(array $points)
     {
-        if (count($points) < 2) {
-            throw new InvalidArgumentException('$points must contain at least two entries');
-        }
+        // Disable points count checking from the original code as Multipoint should support 1 point as well.
+//         if (count($points) < 2) {
+//             throw new InvalidArgumentException('$points must contain at least two entries');
+//         }
 
         $validated = array_filter($points, function ($value) {
             return $value instanceof Point;
